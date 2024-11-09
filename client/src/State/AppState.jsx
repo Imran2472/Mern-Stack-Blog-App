@@ -26,7 +26,7 @@ const AppState = (props) => {
     getAllUsers();
   }, [reload, localStorage.getItem("token")]);
 
-  const URl = "http://localhost:5000/api";
+  const URl = "https://mern-stack-blog-app-zeta.vercel.app/api";
   const RegisterUser = async (formData) => {
     const Response = await axios.post(`${URl}/user/register`, formData, {
       headers: {
