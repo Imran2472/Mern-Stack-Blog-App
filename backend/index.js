@@ -21,10 +21,10 @@ const port = process.env.PORT || 4000;
 app.get("/", (req, res) => {
   res.send("Hello from the server!");
 });
-//  "mongodb+srv://picsswap9:RGhWkUjQjKtyvRaB@cluster0.njb4a.mongodb.net/"
+
 try {
   mongoose.connect(
-    "mongodb://picsswap9:RGhWkUjQjKtyvRaB@cluster0-shard-00-00.njb4a.mongodb.net:27017,cluster0-shard-00-01.njb4a.mongodb.net:27017,cluster0-shard-00-02.njb4a.mongodb.net:27017/?replicaSet=atlas-11wgcq-shard-0&ssl=true&authSource=admin",
+    `${process.env.MONGOOSEURI}`,
     {
       dbName: "my_blog",
     },
