@@ -149,7 +149,7 @@ function Profile() {
               value={password}
               name="password"
               onChange={(event) => setPassword(event.target.value)}
-              placeholder="Enter full name"
+              placeholder="Enter New Password"
               className="block w-full px-4 py-2 text-sm text-gray-500 border border-gray-300 rounded-md outline-blue-600"
               required={true}
             />
