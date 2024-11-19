@@ -22,7 +22,6 @@ function Profile() {
     setname(user?.profile?.user?.name);
     setEmail(user?.profile?.user?.email);
     image && setimage(user?.profile?.user?.image);
-    setPassword(user?.profile?.user?.password);
     setFile(user?.profile?.user?.image);
   };
   const Editeing = () => {
